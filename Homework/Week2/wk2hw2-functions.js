@@ -117,4 +117,47 @@ const filterLongWords = (arrayWords, i) => {
 
 console.log(filterLongWords(testWords2, num));
 
+// -------------------------------------------------------------------------------------------//
 
+// Bonus Challenge 1 //
+// Add a method reverseString (from question 6) to the object String so that it is possible to call: "Per Scholas".reverseString().
+
+
+const String = {
+  // this method reverses strings
+  reverseString(string) { 
+      return string.toLowerCase().split('').reverse().join('');
+  }
+};
+const perScholas = "Per Scholas";
+console.log(String.reverseString(perScholas));
+
+
+// Challenge 2 //
+// Write a function that takes a string as argument and returns an object where:
+// the keys are the characters that occur in the string
+// the values are the number of occurrences for each letter, regardless of the case
+// For example, calling the function with the string "Per Scholas" will return:
+
+// { a: 1,
+// c: 1, e: 1,
+// h: 1, l: 1,
+// o: 1,
+// p: 1, r: 1, s: 2, }
+
+// create a function that takes in a string as an argument
+const charFreq = (str) => { 
+  // this converts the string to lower case characters, turns it into an array of characters, 
+  // I used the reduce method: labeling the accumulator count and acknowledging each character as the current value
+  
+  return str.toLowerCase().split('').reduce((count,letter) => { 
+    // within the reduce method there is a ternary operator checking for characters and their frequency.   
+    count[letter] ? count[letter]++ : count[letter] = 1;
+    return count;
+    // We set empty curly braces as the initial value, creating an empty object to be filled once the method executes.
+  }, {});
+}; 
+
+let charTest = 'Per Scholas';
+
+console.log(charFreq(charTest));
