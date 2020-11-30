@@ -59,20 +59,20 @@ console.log(user1.greeting());
 // Challenge 7 - Codesmith Objects - Iterating with For in //
     // You are provided with an empty array called objToArray. Using a  for... in loop, fill the array with all of the numbers from the checkObj object if they are greater than or equal to 2.
 
-// const checkObj = {
-//     oddNum: 1,
-//     evenNum: 2,
-//     foundNum: 5,
-//     randomNum: 18
-// };
+const checkObj = {
+    oddNum: 1,
+    evenNum: 2,
+    foundNum: 5,
+    randomNum: 18
+};
       
-// const objToArray = [];
+const objToArray = [];
 
-// for (const property in checkObj) {
-//   checkObj[property] >= 2 ? objToArray.push(checkObj[property]) : null; 
-// }
+for (const property in checkObj) {
+  checkObj[property] >= 2 ? objToArray.push(checkObj[property]) : null; 
+}
 
-// console.log(objToArray);
+console.log(objToArray);
 
 // Challenge 8 - Codesmith Objects - Iterating with a for loop //
     // This time, use the Object.values() method to return an array of checkObj's values, and assign this array to a constant called objToArray. Next, use a for loop to iterate through objToArray and determine if any of the numbers are divisible by 6. If so, reassign the value of divBy6 to true.
