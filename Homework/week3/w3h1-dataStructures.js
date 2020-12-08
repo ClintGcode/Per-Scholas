@@ -6,6 +6,7 @@
 
 const horror = ['Freddy', 'Jason', 'Michael', 'Ghostface', 'Chucky'];
 const fourthItem = horror[3];
+console.log('Challenge 1');
 console.log(fourthItem);
 
 // Challenge 2 - Arrays - Adding Elements //
@@ -13,6 +14,7 @@ console.log(fourthItem);
 
 const  netflixShows = ["Orange is the New Black", "Black Mirror", "Chewing Gum"];
 netflixShows.push('Undoing');
+console.log('Challenge 2');
 console.log(netflixShows);
 
 // Challenge 3 - For Loops and Arrays //
@@ -26,6 +28,7 @@ const greetings = [];
 for (let i = 0; i < synonyms.length; i++) {
   greetings.push(`Have a ${synonyms[i]} day!`);
 }; 
+console.log('Challenge 3');
 console.log(greetings)
 
 for (let i = greetings.lenght-1; i > greetings.length; i--) {
@@ -41,6 +44,7 @@ for (let i = 0; i < increaseByTwo.length; i++) {
   increaseByTwo[i] += 2; 
 }
 
+console.log('Challenge 4');
 console.log(increaseByTwo); 
 
 // Challenge 5 - For Loops and Array Indices //
@@ -55,11 +59,40 @@ const bios = [];
 for (let i = 0; i < places.length; i++) {
   bios.push(`My name is ${firstNames[i]} ${lastNames[i]} and I am from ${places[i]}`);
 }
+
+console.log('Challenge 5');
 console.log(bios);
 
-// Challenge 7 - Objects - Adding Properties //
+// Challenge 6 - Objects - Adding Properties //
 // You are provided with an array, possibleIterable. Using a for loop, build out the object divByThree so that each key is an element of possibleIterable that is divisible by three. The value of each key should be the array index at which that key can be found in possibleIterable.
 
 const possibleIterable = [4, 3, 9, 6, 23];
 const divByThree = {};
 // ADD CODE HERE
+for (let i = 0; i < possibleIterable.length; i++) { //Loops through the divByThree Object
+  if (possibleIterable[i] % 3 === 0){ // if the current number is divisible by three the block will execute
+    divByThree[possibleIterable[i]] = i; // Adds value of possibleIterable[i] to divByThree Key
+  }
+}
+
+ console.log('Challenge 6');
+console.log(divByThree);
+
+// Challenge 7 - Objects - Evaluating Keys //
+// You are given an object called sumMe containing several key/value pairs and a variable called total whose initial value is 0. Using a for... in loop, iterate through the keys of sumMe; if the value corresponding to a key is a number, add it to total
+
+const sumMe = {
+  hello: 'there',
+  you: 8,
+  are: 7,
+  almost: '10',
+  done: '!'
+};
+let total = 0;
+// ADD CODE HERE
+for (const element in sumMe) {
+  typeof sumMe[element] === 'number' ? total += sumMe[element] : null; 
+}
+
+console.log('Challenge 7')
+console.log(total);
