@@ -19,9 +19,10 @@ $(() => {
         let numComplaints = $("#num-complaints").val();
         console.log(numComplaints);
         console.log(clickedBTN)
-        console.log(filledInUrl)
+        // console.log(filledInUrl)
+
         // Toggles the table when a button is clicked //
-        $('.tm-responsive-table').slideToggle(1000)
+        $('.tm-responsive-table').slideToggle(600)
 
 
         $.ajax({
@@ -31,6 +32,8 @@ $(() => {
                 "$limit" : numComplaints || 10
             }
         }).then((data) => {
+
+            
 
             for (let i = 0; i < data.length ; i++) {
 
@@ -47,7 +50,8 @@ $(() => {
                 // Interact with table element to 
                 // fill in different columns with 
                 // 311 API data saved in variables
-                // each iteration is a new 
+                // each iteration is a new row
+                
                 $('#borough-col').text(borough).css({
                     'color': 'black',
                 })
@@ -60,11 +64,11 @@ $(() => {
                     'color': 'black',
                 })
 
+                }
+
                 $('#response-col-btn').on('click', (event) => {
                     alert(response);
                 })
-
-                }
         
         })
 
