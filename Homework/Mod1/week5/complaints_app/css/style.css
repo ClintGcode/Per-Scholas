@@ -1,0 +1,130 @@
+/*
+
+Tooplate 2118 Chilling Cafe
+
+https://www.tooplate.com/view/2118-chilling-cafe
+
+
+    Background color:       #3a4a58
+    Title color:            #996633
+    Text color:             #666666
+    Text Dark color:        #333333
+    Table Heading color:    #C4CDD6
+    Table Alternate color:  #e5e8ed 
+*/
+
+body {
+  background-color: #3a4a58;
+  color: #ffffff;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 15px;
+  margin: 0;
+}
+
+.tm-container {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tm-main-content { background-color: #ffffff; }
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  
+} 
+
+.tm-page-header-container { text-align: center; }
+
+.tm-page-header {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+.tm-section-header {
+  color: #3a4a58;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  /* display: none; */
+}
+
+td {
+  text-align: center;
+  padding: 10px 15px;
+}
+
+#response-col {
+
+}
+
+
+.tm-text-left { text-align: left; }
+
+th {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #587186;
+}
+
+tr:nth-child(odd) { background-color: #e5e8ed; }
+
+tr.tm-tr-header {
+  background-color: #c4cdd6;
+  height: 50px;
+  
+}
+
+.tm-section {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+.tm-footer-text {
+  font-size: 0.9rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-right: 3px;
+}
+
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:"Open Sans", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: #4e6477;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+  text-align: center;
+  position: relative;
+}

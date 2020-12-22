@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dougie The Donut & Pizza Rat</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="tm-container">
+      <div class="tm-text-white tm-page-header-container">
+        <h1 class="tm-page-header">Dougie The Donut & Pizza Rat</h1>
+      </div>
+      <div class="tm-main-content">
+        <section class="tm-section">
+          <h2 class="tm-section-header">New York City Complaints</h2>
+
+
+          <!-- Form / Buttons Container -------------------------------------------------->
+          
+          <div class="buttons">
+            <form id="userInput"> 
+              <input id="num-complaints" placeholder="# of complaints" type="text" value="">
+            </form>
+              <button class="btn" id="btn-bronx" value="BRONX">Bronx</button>
+              <button class="btn" id="btn-manhattan" value="MANHATTAN">Manhattan</button>
+              <button class="btn" id="btn-brooklyn" value="BROOKLYN">Brooklyn</button>
+              <button class="btn" id="btn-queens" value="QUEENS">Queens</button>
+              <button class="btn" id="btn-statenIsland" value="STATEN ISLAND">Staten Island</button>
+          </div>
+          <!-- Form / Buttons Container End --------------------------------------------->
+          <!-- Responsive Table  ----------------------------------------------------------->
+          <div class="tm-responsive-table" style="display:none">
+            <table id="app-table">       
+                <tr class="tm-tr-header">
+                  <th>Borough</th>
+                  <th>Complaint</th>
+                  <th>Agency</th>
+                  <th>Response</th>
+                </tr>
+                <!-- Row 1 -->
+                <tr>
+                  <td class="tm-text-left" id="borough-col"></td>
+                  <td id="complaint-col"></td>
+                  <td id="agency-col"></td>
+                  <td id="response-col"><button id="response-col-btn">Response</button></td>
+                </tr>
+              </table>
+            </div>
+          <!-- Info Table Container End ---------------------------------------------------------------------------->
+          </div>
+        </section>
+      </div>
+      <footer>
+        <p class="tm-text-white tm-footer-text">
+          Copyright &copy; 2020 Clinton Garwood 
+        </p>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
