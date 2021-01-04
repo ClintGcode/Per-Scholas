@@ -1,0 +1,61 @@
+.container {
+    margin: 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #f6f5f5;
+    padding: 50px;
+}
+.navCol {
+    grid-column: 1 / 1;
+    grid-row: 1 / span 3;
+    align-items: center;
+    position: relative;
+    align-items: center;
+
+}
+.navCol ul {
+    margin: 0;
+    margin-top: 350px;
+}
+.navCol ul li {
+    margin: 20px;
+}
+.reviews {
+    grid-column: 2 / span 1;
+    grid-row: 1
+}
+.avgRating {
+    grid-column: 3 / span 1;
+    grid-row: 1
+}
+.sentAnalysis {
+    grid-column: 4 / span 1;
+    grid-row: 1
+}
+.visitors {
+    grid-column: 2 / span 4;
+    grid-row: 2 / span 3
+}
+.container div {
+    background-color: #d8d8d8;
+    margin: 10px;
+    color: black;
+    padding: 20px 5px;
+    font: monospace;
+    
+}
+div .title {
+    font-size: 50%;
+}
+div .numData {
+    font-size: 70%;
+}
+.visitors .visitorsChart {
+    position: relative;
+    background-color: #b6b5b5;
+    border: none ;
+    margin: auto;
+    width: 90%;
+    height: 55%;
+}
