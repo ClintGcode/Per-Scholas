@@ -13,7 +13,8 @@ $(document).ready(function(){
     var highScore = 0;
     var level = 70; // 
 	// Develop the snake
-	let snake; 
+    let snake; 
+    let marzName = "Marz Mcken"
     
     //----------------This function represents the beginning of the game --------------//
 	function startGame() {

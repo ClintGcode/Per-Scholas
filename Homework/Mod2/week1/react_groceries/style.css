@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background: url(/img/food-background.jpg);
+    background-repeat: repeat;
+    background-size: 100vw ;
+    font-family: 'Roboto' ;
+}
+.container {
+    background-color: white;
+    opacity: .90;
+    padding: 20px 15px ;
+    display: flex;
+    text-align: center;
+}
+.header-title h1{
+margin-bottom: -15px;
+}
+.form-container form {
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+}
