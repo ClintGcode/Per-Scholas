@@ -38,12 +38,14 @@ const GroceryItems = [
 
 
 class App extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {
             groceryState: GroceryItems
         }
     }
+
     render() {
         return (
             <div className="container">
@@ -69,9 +71,6 @@ class App extends React.Component {
                             <button>Add to cart</button>
                         </form>
                     </div>
-
-
-                    
                 </div>
                 
             </div>
